@@ -1,7 +1,7 @@
 package task04.logic;
 
-import task04.description.Tour;
-import task04.description.TourAgency;
+import task04.entity.Tour;
+import task04.entity.TourAgency;
 
 import java.util.Collections;
 import java.util.Comparator;

@@ -1,8 +1,8 @@
 package task01.logic;
 
-import task01.description.Area;
-import task01.description.Region;
-import task01.description.State;
+import task01.entity.Area;
+import task01.entity.Region;
+import task01.entity.State;
 
 public class StateAction {
     public double getSquareOfState(State state){

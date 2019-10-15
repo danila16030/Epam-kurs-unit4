@@ -1,7 +1,7 @@
 package task02.logic;
 
-import task02.description.Sentence;
-import task02.description.Word;
+import task02.entity.Sentence;
+import task02.entity.Word;
 
 public class SentenceAction {
     public String getSentenceString(Sentence sentence) {

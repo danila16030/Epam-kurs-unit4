@@ -1,4 +1,4 @@
-package task04.description;
+package task04.entity;
 
 import java.util.Objects;
 

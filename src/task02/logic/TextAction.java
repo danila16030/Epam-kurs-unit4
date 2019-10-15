@@ -1,7 +1,7 @@
 package task02.logic;
 
-import task02.description.Sentence;
-import task02.description.Text;
+import task02.entity.Sentence;
+import task02.entity.Text;
 
 public class TextAction {
     public void addSentence(Text text, Sentence sentence){

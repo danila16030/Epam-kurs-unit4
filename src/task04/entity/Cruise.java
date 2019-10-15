@@ -1,6 +1,4 @@
-package task04.description;
-
-import task04.description.Tour;
+package task04.entity;
 
 public class Cruise extends Tour {
 

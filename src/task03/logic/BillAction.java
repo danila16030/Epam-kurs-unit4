@@ -1,9 +1,12 @@
 package task03.logic;
 
-import task03.description.Bill;
+import task03.entity.Bill;
 
 public class BillAction {
-    public void bloackBill(Bill bill){
-        bill.setBlock(true);
+    public Boolean blockBill(Bill bill) {
+        if (!bill.isBlock()) {
+            bill.setBlock(true);
+        }
+        return true;
     }
 }

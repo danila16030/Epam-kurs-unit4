@@ -1,4 +1,4 @@
-package task03.description;
+package task03.entity;
 
 import java.util.List;
 import java.util.Objects;

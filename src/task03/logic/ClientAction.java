@@ -1,7 +1,7 @@
 package task03.logic;
 
-import task03.description.Bill;
-import task03.description.Client;
+import task03.entity.Bill;
+import task03.entity.Client;
 
 import java.util.Collections;
 import java.util.Comparator;

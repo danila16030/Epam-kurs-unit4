@@ -1,9 +1,8 @@
 package task02.logic;
 
-import task02.description.Sentence;
-import task02.description.Text;
-import task02.description.Word;
-import task02.logic.TextAction;
+import task02.entity.Sentence;
+import task02.entity.Text;
+import task02.entity.Word;
 
 import java.util.ArrayList;
 import java.util.List;

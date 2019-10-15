@@ -1,4 +1,4 @@
-package task01.description;
+package task01.entity;
 
 import java.util.List;
 import java.util.Objects;
