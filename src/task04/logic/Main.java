@@ -1,4 +1,7 @@
-package task04;
+package task04.logic;
+
+import task04.description.*;
+import task04.logic.TourAgencyFunction;
 
 import java.util.ArrayList;
 import java.util.List;

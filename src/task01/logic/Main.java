@@ -1,4 +1,10 @@
-package task01;
+package task01.logic;
+
+import task01.description.Area;
+import task01.description.City;
+import task01.description.Region;
+import task01.description.State;
+import task01.logic.StateAction;
 
 import java.util.ArrayList;
 import java.util.List;

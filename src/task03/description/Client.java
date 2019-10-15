@@ -1,12 +1,19 @@
-package task04;
+package task03.description;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Client {
+    private List<Bill> billList;
     private String clientName;
 
-    public Client(String clientName) {
+    public Client(List<Bill> billList, String clientName) {
+        this.billList = billList;
         this.clientName = clientName;
+    }
+
+    public List<Bill> getBillList() {
+        return billList;
     }
 
     public String getClientName() {
@@ -18,18 +25,20 @@ public class Client {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Client client = (Client) o;
-        return Objects.equals(clientName, client.clientName);
+        return Objects.equals(billList, client.billList) &&
+                Objects.equals(clientName, client.clientName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(clientName);
+        return Objects.hash(billList, clientName);
     }
 
     @Override
     public String toString() {
         return "Client{" +
-                "clientName='" + clientName + '\'' +
+                "billList=" + billList +
+                ", clientName='" + clientName + '\'' +
                 '}';
     }
 }

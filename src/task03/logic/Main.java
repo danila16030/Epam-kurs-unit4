@@ -1,6 +1,10 @@
-package task03;
+package task03.logic;
 
 
+
+import task03.description.Bill;
+import task03.description.Client;
+import task03.logic.ClientAction;
 
 import java.util.ArrayList;
 import java.util.List;

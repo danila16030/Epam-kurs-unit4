@@ -1,6 +1,8 @@
-package task03;
+package task03.logic;
 
-import java.util.Arrays;
+import task03.description.Bill;
+import task03.description.Client;
+
 import java.util.Collections;
 import java.util.Comparator;
 

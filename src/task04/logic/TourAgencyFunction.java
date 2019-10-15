@@ -1,6 +1,8 @@
-package task04;
+package task04.logic;
 
-import java.util.Arrays;
+import task04.description.Tour;
+import task04.description.TourAgency;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;

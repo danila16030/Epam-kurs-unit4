@@ -1,4 +1,6 @@
-package task04;
+package task04.description;
+
+import task04.description.Tour;
 
 public class Cruise extends Tour {
 

@@ -1,4 +1,4 @@
-package task03;
+package task03.description;
 
 import java.util.Objects;
 

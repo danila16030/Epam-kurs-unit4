@@ -1,4 +1,4 @@
-package task04;
+package task04.description;
 
 public class Medicine extends Tour {
 

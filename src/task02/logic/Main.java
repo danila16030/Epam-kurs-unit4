@@ -1,4 +1,9 @@
-package task02;
+package task02.logic;
+
+import task02.description.Sentence;
+import task02.description.Text;
+import task02.description.Word;
+import task02.logic.TextAction;
 
 import java.util.ArrayList;
 import java.util.List;
