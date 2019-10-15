@@ -1,5 +1,7 @@
 package task03;
 
+import java.util.Objects;
+
 public class Bill {
     private String billNumber;
     private boolean block;
@@ -25,5 +27,29 @@ public class Bill {
 
     public void setBlock(boolean block) {
         this.block = block;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Bill bill = (Bill) o;
+        return block == bill.block &&
+                money == bill.money &&
+                Objects.equals(billNumber, bill.billNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(billNumber, block, money);
+    }
+
+    @Override
+    public String toString() {
+        return "Bill{" +
+                "billNumber='" + billNumber + '\'' +
+                ", block=" + block +
+                ", money=" + money +
+                '}';
     }
 }

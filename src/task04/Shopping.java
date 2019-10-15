@@ -8,4 +8,8 @@ public class Shopping extends Tour {
         this.setTourType("Shopping");
     }
 
+    @Override
+    public String toString() {
+        return "Tour type:" +this.getTourType()+super.toString();
+    }
 }

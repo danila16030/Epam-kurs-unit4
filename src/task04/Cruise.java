@@ -7,4 +7,8 @@ public class Cruise extends Tour {
         this.setTourType("Cruise");
     }
 
+    @Override
+    public String toString() {
+        return "Tour type:" +this.getTourType()+super.toString();
+    }
 }

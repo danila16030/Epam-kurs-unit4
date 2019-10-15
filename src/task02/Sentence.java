@@ -1,6 +1,7 @@
 package task02;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Sentence {
     private List<Word> wordList;
@@ -15,5 +16,23 @@ public class Sentence {
         return wordList;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Sentence sentence = (Sentence) o;
+        return Objects.equals(wordList, sentence.wordList);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(wordList);
+    }
+
+    @Override
+    public String toString() {
+        return "Sentence{" +
+                "wordList=" + wordList +
+                '}';
+    }
 }

@@ -1,5 +1,7 @@
 package task04;
 
+import java.util.Objects;
+
 public class Tour {
     private int numberOfDays;
     private int cost;
@@ -50,6 +52,31 @@ public class Tour {
         return tourType;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Tour tour = (Tour) o;
+        return numberOfDays == tour.numberOfDays &&
+                cost == tour.cost &&
+                food == tour.food &&
+                Objects.equals(transport, tour.transport) &&
+                Objects.equals(tourType, tour.tourType);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(numberOfDays, cost, food, transport, tourType);
+    }
 
+    @Override
+    public String toString() {
+        return "Tour{" +
+                "numberOfDays=" + numberOfDays +
+                ", cost=" + cost +
+                ", food=" + food +
+                ", transport='" + transport + '\'' +
+                ", tourType='" + tourType + '\'' +
+                '}';
+    }
 }
